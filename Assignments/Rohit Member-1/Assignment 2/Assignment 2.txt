@@ -1,0 +1,13 @@
+import random
+temperature=[]
+Humidity=[]
+for i in range(5):
+    temp=(round(random.uniform(18.0,40.0),2))
+    temperature.append(temp)
+    print("Temperature",temperature)
+    humidity=(round(random.uniform(20.0,90.0),2))
+    Humidity.append(humidity)
+    print("Humidity",Humidity)
+for i in range(5):
+    if(temperature[i]>30 and Humidity[i]>50):
+        print("Hazard detected at Temperature & Humiditity",temperature[i],Humidity[i])
