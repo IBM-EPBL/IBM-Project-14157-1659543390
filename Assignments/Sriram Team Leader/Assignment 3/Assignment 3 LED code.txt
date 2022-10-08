@@ -1,0 +1,18 @@
+import RPi.GPIO as IO            # calling header file for GPIO’s of PI
+
+import time                              # calling for time to provide delays in program
+
+
+IO.setmode (IO.BOARD)       # programming the GPIO by BOARD pin numbers, GPIO21 is called as PIN40
+
+IO.setup(40,IO.OUT)            # initialize digital pin40 as an output.
+
+while(true):
+
+	IO.output(40,1)                      
+
+	time.sleep(1)                       
+
+	IO.cleanup()                        
+
+	time.sleep(1)
